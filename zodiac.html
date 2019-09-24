@@ -1,0 +1,118 @@
+
+<html>
+  <head>
+    <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script>
+    function getNums(){
+      var year = document.getElementById('input').value
+      year = parseInt(year);
+    if(year % 12 == 0){
+       monk();
+   }
+  else if(year % 12 == 1){
+     roo();
+   }
+  else if(year % 12 == 2){
+    dogg();
+      }
+  else if(year % 12 == 3){
+      pi();
+      }
+  else if(year % 12 == 4){
+    ra();
+      }
+  else if(year % 12 == 5){
+    o();
+  }
+  else if(year % 12 == 6){
+      tig();
+    }
+  else if(year % 12 == 7){
+  rab();
+}
+  else if(year % 12 == 8){
+  drag();
+}
+  else if(year % 12 == 9){
+    snak();
+  }
+  else if(year % 12 == 10){
+  hors();
+}
+  else if(year % 12 == 11){
+  goa();
+}
+    }
+
+    function monk(){
+    var monkey = "<img src = 'monkey.jpg' height = '100px' width = '200px'>";
+    document.getElementById("sign").innerHTML = monkey;
+  }
+
+  function roo(){
+  var rooster = "<img src = 'rooster.jpg' height = '100px' width = '200px'>";
+  document.getElementById("sign").innerHTML = rooster;
+}
+
+function dogg(){
+var dog = "<img src = 'dog.jpg' height = '100px' width = '200px'>";
+document.getElementById("sign").innerHTML = dog;
+}
+function pi(){
+var pig = "<img src = 'pig.jpg' height = '100px' width = '200px'>";
+document.getElementById("sign").innerHTML = pig;
+}
+function ra(){
+var rat = "<img src = 'rat.jpg' height = '100px' width = '200px'>";
+document.getElementById("sign").innerHTML = rat;
+}
+function o(){
+var ox = "<img src = 'ox.jpg' height = '100px' width = '200px'>";
+document.getElementById("sign").innerHTML = ox;
+}
+function tig(){
+var tiger = "<img src = 'tiger.jpg' height = '100px' width = '200px'>";
+document.getElementById("sign").innerHTML = tiger;
+}
+function rab(){
+var rabbit = "<img src = 'rabbit.jpg' height = '100px' width = '200px'>";
+document.getElementById("sign").innerHTML = rabbit;
+}
+function drag(){
+var dragon = "<img src = 'dragon.jpg' height = '100px' width = '200px'>";
+document.getElementById("sign").innerHTML = dragon;
+}
+function snak(){
+var snake = "<img src = 'snake.jpg' height = '100px' width = '200px'>";
+document.getElementById("sign").innerHTML = snake;
+}
+function hors(){
+  var horse = "<img src = 'horse.jpg' height = '100px' width = '200px'>";
+  document.getElementById("sign").innerHTML = horse;
+}
+function goa(){
+  var goat = "<img src = 'goat.jpg' height = '100px' width = '200px'>";
+  document.getElementById("sign").innerHTML = goat;
+}
+    </script>
+    <title>Chinese Zodiac</title>
+  </head>
+  <body>
+    <style>
+    body{
+    background-image: url("zodiacimgg.jpg");
+    background-size: 750px 1000px;
+    }
+    body {
+           font-family: 'Tangerine', serif;
+           font-size: 48px;
+         }
+    </style>
+    <input type = "text"  value = "Type in YOB" id = "input">
+        <input type = "button" value = "Click to confirm" onclick = "getNums()">
+        <br>
+
+<span id = "sign"></span>
+  </body>
+</html>
